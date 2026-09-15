@@ -9,6 +9,7 @@ html, body{
     color: black;
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 .navbar{
     display: flex;
@@ -80,7 +81,7 @@ html, body{
     border-radius: 20px;
 }
 .milkshake{
-    height: 200px;
+    min-height: 200px;
     display: flex;
     background-color: #00754A;
 }
@@ -118,10 +119,11 @@ html, body{
     width: fit-content;
     text-align: center !important;
     justify-content: center;
-    margin-left: 250px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .Orange-cream{
-    height: 200px;
+    min-height: 200px;
     display: flex;
     background-color: #00754A;
     margin-top: 20px;
@@ -154,20 +156,23 @@ html, body{
     margin-top: 12px;
     text-align: center;
     justify-content: center;
-    margin-left: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .six-1{
     border: 1px solid white;
     border-radius: 20px;
     padding: 7px;
     width: fit-content;
-    margin-top: 12px;
+    margin-top: auto;
+    margin-bottom: auto;
     text-align: center;
     justify-content: center;
-    margin-left: 250px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .Energy-refreshers{
-    height: 200px;
+    min-height: 200px;
     display: flex;
     background-color: #00754A;
     margin-top: 20px;
@@ -209,10 +214,11 @@ html, body{
     width: fit-content;
     margin-top: 12px;
     text-align: center;
-    margin-left: 250px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .Passionfruits-refreshers{
-    height: 200px;
+    min-height: 200px;
     display: flex;
     background-color: #00754A;
     margin-top: 20px;
@@ -228,7 +234,7 @@ html, body{
     line-height: 1.4; 
 }
 .Summers-Travel{
-    height: 200px;
+    min-height: 200px;
     display: flex;
     background-color: #00754A;
     margin-top: 20px;
@@ -265,11 +271,13 @@ html, body{
     padding: 15px;
 }
 .Social-Media{
-    width: 40%;
+    align-items: center;
     margin-top: 20px;
     display: flex;
-    gap: 7px;
+    gap: 8px;
     padding: 15px;
+    margin-top: 30px;
+    margin-left: 8px;
 }
 .socials{
     color: black;
@@ -294,17 +302,17 @@ html, body{
     cursor: pointer;
     margin-right: 20px;
 }
-.nav-toogle span{
+.nav-toggle span{
     width: 20px;
     height: 2px;
     background-color: black;
 }
 
-@media (max-width: 900px;){
-    nav-left span, .nav-right{
+@media (max-width: 900px){
+    .nav-left span, .nav-right{
         display: none;
     }
-    .nav-left.active span, .nav.right.active{
+    .nav-left.active span, .nav-right.active{
         display: flex;
     }
     .nav-left{
@@ -322,7 +330,7 @@ html, body{
         gap: 12px;
         z-index: 10;
     }
-    .nav.right.active{
+    .nav-right.active{
         flex-direction: column;
         align-items: flex-start;
         position: absolute;
@@ -349,7 +357,7 @@ html, body{
     }
     .milkshake img, .Orange-cream img, .Energy-refreshers img, .Passionfruits-refreshers img, .Summers-Travel img{
         width: 100% !important;
-        height: 100% !important;
+        height: auto !important;
     }
     .milkshake-txt, .Orange-cream-txt, .Energy-refreshers-txt, .Passionfruits-txt, .Summers-Travel-txt{
         width: 100%;
